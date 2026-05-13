@@ -102,9 +102,20 @@ window.addEventListener("scroll", () => {
   header?.classList.toggle("is-scrolled", window.scrollY > 30);
 }, { passive: true });
 
-window.addEventListener("load", () => {
+
+
+
+function hideLoader() {
   loader?.classList.add("is-hidden");
+}
+
+window.addEventListener("load", () => {
+  hideLoader();
   setHeroVideo(currentHeroVideo);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  setTimeout(hideLoader, 1200);
 });
 
 heroVideo?.addEventListener("ended", () => {
