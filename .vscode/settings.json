@@ -1,0 +1,5 @@
+{
+    "chat.planAgent.defaultModel": "GPT-4.1 (copilot)",
+    "files.defaultLanguage": "pt-br",
+    "files.autoGuessEncoding": false
+}

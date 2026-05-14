@@ -63,7 +63,7 @@
 
   <header class="site-header" id="header">
     <a href="#inicio" class="brand" aria-label="MM Pescados">
-      <span class="brand__logo"><img src="assets/img/logo.png" alt="MM Pescados" /></span>
+      <span class="brand__logo"><img src="assets/img/logo2.png" alt="MM Pescados" /></span>
       <span>MM Pescados</span>
     </a>
 
@@ -73,6 +73,8 @@
 
     <nav class="nav" id="nav">
       <a href="#produtos">Produtos</a>
+      <a href="#sisbi">SISBI</a>
+      <a href="#sobre">Sobre</a>
       <a href="#qualidade">Qualidade</a>
       <a href="#avaliacoes">Avaliações</a>
       <a href="#contato">Contato</a>
@@ -81,235 +83,305 @@
   </header>
 
   <main>
-    <section class="hero section" id="inicio">
-      <div class="hero__bg"></div>
-      <div class="hero__texture"></div>
-
-      <div class="container hero__grid">
-        <div class="hero__content reveal">
-          <span class="eyebrow"><i class="fa-solid fa-water"></i> Santo Antônio de Lisboa • Florianópolis/SC</span>
-          <h1>Peixes frescos e frutos do mar com qualidade premium.</h1>
-          <p>
-            Produtos selecionados diariamente para quem busca frescor, praticidade,
-            preço justo e um atendimento próximo no presencial, WhatsApp e loja virtual.
-          </p>
-
-          <div class="hero__actions">
-            <a class="btn btn--primary whatsapp-pulse" href="https://wa.me/554830244024?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MM%20Pescados%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener">
-              <i class="fa-brands fa-whatsapp"></i>
-              Chamar no WhatsApp
+    <!-- Hero Section -->
+    <section class="section hero-section" id="inicio">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="eyebrow">Bem-vindo à MM Pescados</span>
+          <h1>Qualidade que você percebe antes mesmo da primeira compra.</h1>
+          <p>Peixes frescos, filés premium, frutos do mar, congelados e empanados. Tudo selecionado com cuidado para sua mesa.</p>
+          
+          <div class="hero-actions">
+            <a class="btn-primary" href="https://wa.me/554830244024?text=Olá, vim pelo site da MM Pescados e quero fazer um pedido.">
+              <i class="fa-brands fa-whatsapp"></i> Fazer Pedido
             </a>
-            <a class="btn btn--ghost whatsapp-pulse" href="https://mmpescados.com.br/" target="_blank" rel="noopener">
-              <i class="fa-solid fa-bag-shopping"></i>
-              Ir para o e-commerce
+            <a class="btn-secondary" href="#produtos">
+              <i class="fa-solid fa-arrow-down"></i> Ver Produtos
             </a>
-          </div>
-
-          <div class="hero__badges">
-            <span><i class="fa-solid fa-check-circle"></i> Produtos selecionados</span>
-            <span><i class="fa-solid fa-snowflake"></i> Frescor e segurança</span>
-            <span><i class="fa-solid fa-location-dot"></i> Atendimento local</span>
           </div>
         </div>
 
-        <div class="hero__media reveal reveal--delay">
-          <div class="hero-card">
-            <video id="heroVideo" class="hero-card__video" autoplay muted playsinline preload="metadata" poster="assets/img/fachada-mm-pescados.jpg">
-              <source src="assets/videos/v1.mp4" type="video/mp4">
-            </video>
-            <div class="hero-card__brand">
-              <div class="hero-card__brand-logo">
-                <span>MM</span>
-                <small>Pescados</small>
-              </div>
-              <div class="hero-card__brand-links">
-                <a href="tel:+554830244024"><i class="fa-solid fa-phone"></i>(48) 3024-4024</a>
-                <a href="https://mmpescados.com.br/" target="_blank" rel="noopener"><i class="fa-solid fa-globe"></i>mmpescados.com.br</a>
-              </div>
-            </div>
-            <div class="hero-card__float">
-              <i class="fa-solid fa-star"></i>
-              <strong>Qualidade de peixaria premium</strong>
-              <span>Fresco, selecionado e pronto para sua receita.</span>
-            </div>
-          </div>
+        <div class="hero-media reveal">
+          <video id="heroVideo" autoplay muted loop playsinline poster="assets/img/fachada-mm-pescados.jpg">
+            <source src="assets/videos/v1.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
-
-      <a class="scroll-indicator" href="#produtos" aria-label="Ir para produtos">
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
     </section>
 
-    <section class="section products" id="produtos">
+    <!-- Produtos / Vitrine Section -->
+    <section class="section showcase-section" id="produtos">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Seleção do dia</span>
+        <div class="section-header reveal">
+          <span class="eyebrow">NOSSA COLEÇÃO</span>
           <h2>Produtos para uma mesa mais fresca e sofisticada.</h2>
-          <p>Conheça as principais linhas da MM Pescados e escolha o melhor caminho para sua próxima compra.</p>
+          <p>Confira os principais destaques da MM Pescados à escolha e sabor contento para sua principal compra.</p>
         </div>
 
-        <div class="cards cards--four">
-          <article class="premium-card reveal">
-            <span class="premium-card__number">01</span>
-            <i class="fa-solid fa-fish premium-card__icon"></i>
-            <h3>Peixes Frescos</h3>
-            <p>Produtos selecionados diariamente para garantir mais sabor, qualidade e segurança na sua mesa.</p>
-            <a href="https://mmpescados.com.br/" target="_blank" rel="noopener">Ver produtos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </article>
+        <div class="showcase-grid">
+          <div class="showcase-card reveal">
+            <div class="showcase-image">
+              <img src="assets/img/p4.jpeg" alt="Peixe Fresco Inteiro">
+            </div>
+            <div class="showcase-content">
+              <h3>Peixes Frescos</h3>
+              <p>Peixes selecionados diretamente de procedência confiável para você.</p>
+              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
 
-          <article class="premium-card reveal">
-            <span class="premium-card__number">02</span>
-            <i class="fa-solid fa-utensils premium-card__icon"></i>
-            <h3>Filés Premium</h3>
-            <p>Filés limpos, práticos e prontos para preparo. Ideais para grelha, forno, fritura e receitas especiais.</p>
-            <a href="https://mmpescados.com.br/" target="_blank" rel="noopener">Ver produtos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </article>
+          <div class="showcase-card reveal">
+            <div class="showcase-image">
+              <img src="assets/img/p2.jpeg" alt="Filés Premium">
+            </div>
+            <div class="showcase-content">
+              <h3>Filés Premium</h3>
+              <p>Filés frescos, cortados e tratados com cura para um resultado excelente e buscando Empanados.</p>
+              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
 
-          <article class="premium-card reveal">
-            <span class="premium-card__number">03</span>
-            <i class="fa-solid fa-ship premium-card__icon"></i>
-            <h3>Frutos do Mar</h3>
-            <p>Camarão, lula, mariscos e frutos do mar selecionados para receitas sofisticadas e sabores marcantes.</p>
-            <a href="https://mmpescados.com.br/" target="_blank" rel="noopener">Ver produtos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </article>
+          <div class="showcase-card reveal">
+            <div class="showcase-image">
+              <img src="assets/img/p5.png" alt="Frutos do Mar">
+            </div>
+            <div class="showcase-content">
+              <h3>Frutos do Mar</h3>
+              <p>Camarão, lula, polvo e outros frutos do mar sempre frescos e de qualidade excelente.</p>
+              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
 
-          <article class="premium-card reveal">
-            <span class="premium-card__number">04</span>
-            <i class="fa-solid fa-snowflake premium-card__icon"></i>
-            <h3>Congelados & Empanados</h3>
-            <p>Linha completa de congelados, empanados e produtos prontos para praticidade sem abrir mão da qualidade.</p>
-            <a href="https://mmpescados.com.br/" target="_blank" rel="noopener">Ver produtos <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section quality" id="qualidade">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow">Por que escolher</span>
-          <h2>Qualidade que você percebe antes mesmo da primeira compra.</h2>
-          <p>Selecionamos produtos frescos diariamente, com qualidade premium, preços acessíveis e atendimento próximo em todos os canais.</p>
-        </div>
-
-        <div class="cards cards--three">
-          <article class="premium-card reveal">
-            <i class="fa-solid fa-star premium-card__icon"></i>
-            <h3>Frescor Garantido</h3>
-            <p>Produtos selecionados diariamente para entregar mais sabor, qualidade e segurança na sua mesa.</p>
-          </article>
-
-          <article class="premium-card reveal">
-            <i class="fa-solid fa-tags premium-card__icon"></i>
-            <h3>Qualidade & Preço Justo</h3>
-            <p>Peixes, filés, congelados e frutos do mar com valores acessíveis e excelente custo-benefício.</p>
-          </article>
-
-          <article class="premium-card reveal">
-            <i class="fa-solid fa-headset premium-card__icon"></i>
-            <h3>Atendimento Completo</h3>
-            <p>Compre presencialmente, pelo WhatsApp ou através da loja virtual com praticidade e atendimento humanizado.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section experience">
-      <div class="container experience__grid">
-        <div class="experience__image reveal">
-          <img src="assets/img/logo.png" alt="Identidade visual MM Pescados" />
-        </div>
-
-        <div class="experience__content reveal reveal--delay">
-          <span class="eyebrow">Experiência premium</span>
-          <h2>Do balcão ao pedido online, tudo pensado para facilitar sua compra.</h2>
-          <p>
-            A MM Pescados une atendimento presencial, WhatsApp e e-commerce para tornar a compra mais rápida,
-            segura e prática. Ideal para quem busca produtos de qualidade sem complicação.
-          </p>
-
-          <div class="feature-list">
-            <div><i class="fa-solid fa-store"></i><span>Atendimento presencial em Santo Antônio de Lisboa</span></div>
-            <div><i class="fa-brands fa-whatsapp"></i><span>Pedido facilitado pelo WhatsApp</span></div>
-            <div><i class="fa-solid fa-shopping-cart"></i><span>Direcionamento para loja virtual</span></div>
-            <div><i class="fa-solid fa-shield-halved"></i><span>Produtos armazenados com cuidado</span></div>
+          <div class="showcase-card reveal">
+            <div class="showcase-image">
+              <img src="assets/img/p1.jpeg" alt="Congelados & Empanados">
+            </div>
+            <div class="showcase-content">
+              <h3>Congelados & Empanados</h3>
+              <p>Opções práticas e saudáveis, sempre mantendo a qualidade para sua casa.</p>
+              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section reviews" id="avaliacoes">
+    <!-- SISBI/Qualidade Section -->
+    <section class="section sisbi-section" id="sisbi">
+      <div class="container sisbi-grid">
+        <div class="sisbi-image reveal">
+          <img src="assets/img/sisbi.jpg" alt="Sistema SISBI - Inspeção de Produtos de Origem Animal">
+        </div>
+
+        <div class="sisbi-content reveal">
+          <span class="eyebrow">CERTIFICAÇÃO OFICIAL</span>
+          <h2>Nossa empresa tem SISBI</h2>
+          
+          <p class="sisbi-subtitle">Você sabe o que isso significa?</p>
+          
+          <p>O <strong>SISBI</strong> (Sistema de Inspeção de Produtos de Origem Animal) é um selo oficial que permite que nossos pescados sejam comercializados em <strong>todo o Brasil</strong> com total segurança e qualidade.</p>
+          
+          <h3>Na prática, isso garante a você:</h3>
+          <ul class="sisbi-benefits">
+            <li><i class="fa-solid fa-check"></i> Produtos fiscalizados e dentro das normas sanitárias</li>
+            <li><i class="fa-solid fa-check"></i> Procedência confiável e rastreável</li>
+            <li><i class="fa-solid fa-check"></i> Um pescado de qualidade superior, pronto para sua mesa</li>
+          </ul>
+
+          <p class="sisbi-closing">Com SISBI, nosso compromisso é levar o melhor pescado do nosso estado para todo o país – com o selo de quem você pode confiar.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre Section -->
+    <section class="section about-section" id="sobre">
       <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow"><i class="fa-solid fa-star"></i> Avaliações e confiança</span>
-          <h2>Clientes que buscam frescor, praticidade e bom atendimento.</h2>
-          <p>Espaço preparado para destacar avaliações do Google e depoimentos reais conforme a empresa for recebendo novas recomendações.</p>
+        <div class="about-header reveal">
+          <span class="eyebrow">NOSSA HISTÓRIA</span>
+          <h2>Da Resiliência à Conquista da Sede Própria</h2>
         </div>
 
-        <div class="reviews__summary reveal">
-          <div>
-            <strong>Google Reviews</strong>
-            <span>RUA DEPUTADO WALTER GOMES, 340 – SANTO ANTONIO DE LISBOA, Florianópolis/SC, CEP 88050501</span>
+        <div class="about-content">
+          <div class="about-card reveal">
+            <h3>Um começo movido pelo propósito</h3>
+            <p>A MM Pescados nasceu em um dos momentos mais desafiadores da história recente: em meio à pandemia global. Enquanto o mundo se isolava, nossos fundadores — profissionais com mais de 15 anos de expertise no setor — enxergaram uma missão clara: levar pescados de altíssima qualidade diretamente às casas das pessoas, com segurança e praticidade.</p>
+            <p>O que começou com vendas de porta em porta em condomínios logo se transformou em algo muito maior. Ali, no contato direto, descobrimos o verdadeiro prazer de atender famílias e construímos o nosso maior ativo: relacionamentos baseados em total confiança.</p>
           </div>
-          <a class="btn btn--small btn--ghost whatsapp-pulse" href="https://www.google.com/maps/search/?api=1&query=RUA%20DEPUTADO%20WALTER%20GOMES%20340%20SANTO%20ANTONIO%20DE%20LISBOA%20Florian%C3%B3polis%20SC%2088050501" target="_blank" rel="noopener">
-            <i class="fa-solid fa-map-location-dot"></i>
-            Ver no Google
-          </a>
-        </div>
 
-        <div class="cards cards--three">
-          <article class="review-card reveal">
-            <div class="stars" aria-label="5 estrelas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>Produtos frescos, variedade e atendimento pensado para facilitar a compra do dia a dia.</p>
-            <strong>Cliente MM Pescados</strong>
-          </article>
+          <div class="about-card reveal">
+            <h3>Do artesanal ao processamento industrial</h3>
+            <p>O sucesso da operação domiciliar abriu portas. Fomos convidados a gerenciar uma peixaria física e, nos fundos dessa loja, montamos a primeira estrutura da Indústria MM. Foi o início do nosso processamento profissional, onde unimos o cuidado artesanal à escala necessária para atender um mercado cada vez mais exigente.</p>
+            <p>Nossa marca expandiu-se rapidamente. Em pouco tempo, a MM Pescados tornou-se fornecedora estratégica para grandes redes de supermercados e parceira de confiança para hotéis e restaurantes renomados, consolidando nossa reputação pela excelência do produto.</p>
+          </div>
 
-          <article class="review-card reveal">
-            <div class="stars" aria-label="5 estrelas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>Ótima opção para comprar peixes, filés, congelados e frutos do mar com preço justo.</p>
-            <strong>Cliente Local</strong>
-          </article>
+          <div class="about-card reveal">
+            <h3>O Grande Desafio e a Nova Era (2026)</h3>
+            <p>O ano de 2026 marcou o capítulo mais intenso da nossa jornada. O crescimento acelerado exigia um espaço que suportasse nossa operação. Enfrentamos o desafio de deixar nosso antigo ponto e encarar uma transição complexa e trabalhosa.</p>
+            <p>Nesse período, o apoio de amigos e parceiros comerciais foi o alicerce que nos manteve firmes. Em maio de 2026, o sonho se materializou: concluímos a mudança e inauguramos nossa sede própria em Florianópolis. Hoje, operamos em uma estrutura fabril moderna e centralizada, prontos para os próximos 15 anos de inovação.</p>
+          </div>
 
-          <article class="review-card reveal">
-            <div class="stars" aria-label="5 estrelas">
-              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-            </div>
-            <p>Atendimento prático pelo WhatsApp e direcionamento para loja virtual, sem complicação.</p>
-            <strong>Cliente Online</strong>
-          </article>
+          <div class="about-card reveal">
+            <h3>Nossa Gratidão</h3>
+            <p>Não chegamos aqui sozinhos. Nossa eterna gratidão a todos os clientes, amigos e parceiros que estenderam a mão, acreditaram no nosso sonho e tornaram possível a conquista da nossa própria casa.</p>
+            <p><strong>MM Pescados – Do mar à sua mesa, com a confiança de quem conhece.</strong></p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section cta" id="contato">
-      <div class="cta__pattern"></div>
-      <div class="container cta__content reveal">
-        <span class="eyebrow">Santo Antônio de Lisboa • Florianópolis/SC</span>
-        <h2>Visite ou peça online.</h2>
-        <p>RUA DEPUTADO WALTER GOMES, 340 – SANTO ANTONIO DE LISBOA, Florianópolis/SC, CEP 88050501</p>
+    <!-- Qualidade Section (consolidada) -->
+    <section class="section quality-section" id="qualidade">
+      <div class="container">
+        <div class="quality-header reveal">
+          <span class="eyebrow">NOSSO COMPROMISSO</span>
+          <h2>Qualidade em cada detalhe</h2>
+          <p>Processo rigoroso de seleção, armazenamento e manipulação para garantir que você receba o melhor do mar.</p>
+        </div>
 
-        <div class="cta__actions">
-          <a class="btn btn--primary whatsapp-pulse" href="https://wa.me/554830244024?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MM%20Pescados%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener">
-            <i class="fa-brands fa-whatsapp"></i>
-            Chamar no WhatsApp
-          </a>
-          <a class="btn btn--ghost whatsapp-pulse" href="https://www.google.com/maps/search/?api=1&query=RUA%20DEPUTADO%20WALTER%20GOMES%20340%20SANTO%20ANTONIO%20DE%20LISBOA%20Florian%C3%B3polis%20SC%2088050501" target="_blank" rel="noopener">
-            <i class="fa-solid fa-route"></i>
-            Ver rota
-          </a>
-          <a class="btn btn--ghost whatsapp-pulse" href="https://mmpescados.com.br/" target="_blank" rel="noopener">
-            <i class="fa-solid fa-bag-shopping"></i>
-            Loja virtual
-          </a>
+        <div class="quality-grid">
+          <div class="quality-card reveal">
+            <div class="quality-icon">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <h3>Frescar Garantida</h3>
+            <p>Seleção cuidadosa desde a origem, garantindo total frescor e qualidade em cada produto que chega à sua mesa.</p>
+          </div>
+
+          <div class="quality-card reveal">
+            <div class="quality-icon">
+              <i class="fa-solid fa-certificate"></i>
+            </div>
+            <h3>Certificado SISBI</h3>
+            <p>Selo oficial que permite comercialização em todo o Brasil com total segurança e procedência rastreável.</p>
+          </div>
+
+          <div class="quality-card reveal">
+            <div class="quality-icon">
+              <i class="fa-solid fa-temperature-high"></i>
+            </div>
+            <h3>Controle de Temperatura</h3>
+            <p>Armazenamento em temperatura controlada desde o recebimento até a entrega, preservando todas as propriedades nutricionais.</p>
+          </div>
+
+          <div class="quality-card reveal">
+            <div class="quality-icon">
+              <i class="fa-solid fa-handshake"></i>
+            </div>
+            <h3>Confiança Total</h3>
+            <p>Relacionamento construído na transparência, rastreabilidade e compromisso com a excelência em cada transação.</p>
+          </div>
         </div>
       </div>
     </section>
-  </main>
+
+    <!-- Avaliações Section -->
+    <section class="section reviews-section" id="avaliacoes">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">O QUE NOSSOS CLIENTES DIZEM</span>
+          <h2>Experiências reais de clientes satisfeitos</h2>
+        </div>
+
+        <div class="reviews-grid">
+          <div class="review-card reveal">
+            <div class="review-header">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <strong>Cliente Satisfeito</strong>
+            </div>
+            <p>"A qualidade dos peixes é impecável! Sempre fresco e entrega rápida. Recomendo muito!"</p>
+          </div>
+
+          <div class="review-card reveal">
+            <div class="review-header">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <strong>Restaurante Premium</strong>
+            </div>
+            <p>"Fornecedor de confiança para nossa cozinha. Produtos com excelência consistente."</p>
+          </div>
+
+          <div class="review-card reveal">
+            <div class="review-header">
+              <div class="review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <strong>Família de Florianópolis</strong>
+            </div>
+            <p>"Mudou minha forma de cozinhar! Filés frescos que fazem toda diferença. Voltarei sempre!"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<section class="section contact-premium-section" id="contato">
+  <div class="container contact-premium-grid">
+
+    <div class="contact-premium-content reveal">
+      <span class="eyebrow">Santo Antônio de Lisboa • Florianópolis/SC</span>
+
+      <h2>Visite ou peça online.</h2>
+
+      <p class="contact-address">
+        Rua Deputado Walter Gomes, 340 — Santo Antônio de Lisboa<br>
+        Florianópolis/SC • CEP 88050-501
+      </p>
+
+      <p class="contact-text">
+        Atendimento presencial, WhatsApp e loja virtual para você comprar
+        com praticidade, segurança e qualidade premium.
+      </p>
+
+      <div class="contact-premium-list">
+        <div><i class="fa-brands fa-whatsapp"></i> Atendimento rápido pelo WhatsApp</div>
+        <div><i class="fa-solid fa-store"></i> Retirada e compra presencial</div>
+        <div><i class="fa-solid fa-cart-shopping"></i> Direcionamento para loja virtual</div>
+        <div><i class="fa-solid fa-location-dot"></i> Localização fácil em Florianópolis</div>
+      </div>
+
+      <div class="contact-premium-actions">
+        <a class="btn-primary" target="_blank" href="https://wa.me/5548999999999">
+          <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+        </a>
+
+        <a class="btn-secondary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Rua%20Deputado%20Walter%20Gomes%20340%20Santo%20Ant%C3%B4nio%20de%20Lisboa%20Florian%C3%B3polis%20SC">
+          <i class="fa-solid fa-route"></i> Ver rota
+        </a>
+
+        <a class="btn-secondary" href="#">
+          <i class="fa-solid fa-bag-shopping"></i> Loja virtual
+        </a>
+      </div>
+    </div>
+
+    <div class="contact-map-card reveal">
+      <iframe
+        title="Localização MM Pescados"
+        src="https://www.google.com/maps?q=Rua%20Deputado%20Walter%20Gomes%20340%20Santo%20Ant%C3%B4nio%20de%20Lisboa%20Florian%C3%B3polis%20SC&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
+
+
+</main>
 
   <a class="whatsapp-float whatsapp-pulse" href="https://wa.me/554830244024?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MM%20Pescados%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
