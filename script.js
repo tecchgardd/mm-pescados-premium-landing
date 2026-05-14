@@ -132,3 +132,36 @@ setupWhatsAppLinks();
 setupMobileMenu();
 setupRevealAnimations();
 setupPremiumCardEffect();
+
+
+/* FIX AUTOPLAY MOBILE */
+document.addEventListener("DOMContentLoaded", () => {
+  const heroVideo = document.getElementById("heroVideo");
+
+  if (heroVideo) {
+    heroVideo.muted = true;
+    heroVideo.defaultMuted = true;
+    heroVideo.autoplay = true;
+    heroVideo.playsInline = true;
+    heroVideo.setAttribute("muted", "");
+    heroVideo.setAttribute("autoplay", "");
+    heroVideo.setAttribute("playsinline", "");
+    heroVideo.setAttribute("webkit-playsinline", "");
+
+    const playPromise = heroVideo.play();
+
+    if (playPromise !== undefined) {
+      playPromise
+        .then(() => {})
+        .catch(() => {
+          document.addEventListener(
+            "touchstart",
+            () => {
+              heroVideo.play();
+            },
+            { once: true }
+          );
+        });
+    }
+  }
+});
