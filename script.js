@@ -19,7 +19,12 @@ let currentHeroVideo = 0;
 function setHeroVideo(index) {
   if (!heroVideo || !heroVideoSources[index]) return;
 
-  heroVideo.src = heroVideoSources[index];
+  const sourceEl = heroVideo.querySelector('source');
+  if (sourceEl) {
+    sourceEl.src = heroVideoSources[index];
+  } else {
+    heroVideo.src = heroVideoSources[index];
+  }
   heroVideo.load();
 
   const playPromise = heroVideo.play();
