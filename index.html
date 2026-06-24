@@ -87,7 +87,7 @@
       <a href="#qualidade">Qualidade</a>
       <a href="#avaliacoes">Avaliações</a>
       <a href="#contato">Contato</a>
-      <a class="nav__cta nav__cta--store" href="https://frontend-loja-mmpescados.vercel.app/" target="_blank" rel="noopener"><i class="fa-solid fa-bag-shopping"></i>Loja virtual</a>
+      <a class="nav__cta nav__cta--store" href="manutencao.html"><i class="fa-solid fa-bag-shopping"></i>Loja virtual</a>
     </nav>
   </header>
 
@@ -115,7 +115,7 @@
         </div>
 
         <div class="hero-media reveal">
-          <video id="heroVideo" autoplay muted loop playsinline poster="assets/img/fachada-mm-pescados.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto">
+          <video id="heroVideo" autoplay muted loop playsinline poster="assets/img/fachada-mm-pescados.jpg" webkit-playsinline preload="metadata">
             <source src="assets/videos/v1.mp4" type="video/mp4">
           </video>
         </div>
@@ -145,56 +145,8 @@
           <h2>Seleção premium para sua mesa</h2>
         </div>
 
-        <div class="showcase-grid">
-          <div class="showcase-card reveal">
-            <div class="showcase-image">
-              <img src="assets/img/p4.jpeg" alt="Peixe Fresco Inteiro">
-              <img class="card-logo" src="assets/img/mm-logo-oficial.png" alt="MM Pescados">
-            </div>
-            <div class="showcase-content">
-              <h3>Tilápia Filé</h3>
-              <p>Filé premium</p>
-              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="showcase-card reveal">
-            <div class="showcase-image">
-              <img src="assets/img/p2.jpeg" alt="Filés Premium">
-              <img class="card-logo" src="assets/img/mm-logo-oficial.png" alt="MM Pescados">
-            </div>
-            <div class="showcase-content">
-              <h3>Tilápia Inteira</h3>
-              <p>Frescor garantido</p>
-              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="showcase-card reveal">
-            <div class="showcase-image">
-              <img src="assets/img/p5.png" alt="Frutos do Mar">
-              <img class="card-logo" src="assets/img/mm-logo-oficial.png" alt="MM Pescados">
-            </div>
-            <div class="showcase-content">
-              <h3>Tilápia Posta</h3>
-              <p>Cortes selecionados</p>
-              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="showcase-card reveal">
-            <div class="showcase-image">
-              <img src="assets/img/p1.jpeg" alt="Congelados & Empanados">
-              <img class="card-logo" src="assets/img/mm-logo-oficial.png" alt="MM Pescados">
-            </div>
-            <div class="showcase-content">
-              <h3>Tilápia Descamada</h3>
-              <p>Prática e saborosa</p>
-              <a href="https://wa.me/554830244024" class="btn-link">Ver produtos <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="products-more reveal"><a href="https://frontend-loja-mmpescados.vercel.app/" target="_blank" rel="noopener">Ver todos os produtos <i class="fa-solid fa-arrow-right"></i></a></div>
+        <div class="showcase-grid product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="product-pagination reveal" id="productPagination" aria-label="Paginacao de produtos"></div>
       </div>
     </section>
 
@@ -202,7 +154,7 @@
     <section class="section sisbi-section" id="sisbi">
       <div class="container sisbi-grid">
         <div class="sisbi-image reveal">
-          <img src="assets/img/sisbi.jpg" alt="Sistema SISBI - Inspeção de Produtos de Origem Animal">
+          <img src="assets/img/sisbi.jpg" alt="Sistema SISBI - Inspeção de Produtos de Origem Animal" loading="lazy" decoding="async">
         </div>
 
         <div class="sisbi-content reveal">
@@ -394,7 +346,7 @@
           <i class="fa-solid fa-route"></i><span>Ver rota</span>
         </a>
 
-        <a class="btn-secondary" target="_blank" rel="noopener" href="https://frontend-loja-mmpescados.vercel.app/">
+        <a class="btn-secondary" href="manutencao.html">
           <i class="fa-solid fa-bag-shopping"></i><span>Loja virtual</span>
         </a>
       </div>
@@ -415,6 +367,56 @@
 
 </main>
 
+  <div class="product-modal" id="productModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="productModalTitle">
+    <div class="product-modal__overlay" data-modal-close></div>
+    <div class="product-modal__dialog" role="document">
+      <button class="product-modal__close" type="button" data-modal-close aria-label="Fechar produto">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="product-modal__gallery">
+        <div class="product-modal__badge" id="productModalBadge">
+          <i class="fa-solid fa-fish"></i><span>Produto MM Pescados</span>
+        </div>
+        <button class="product-modal__nav product-modal__nav--prev" type="button" id="modalPrev" aria-label="Imagem anterior">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <img id="modalImage" src="" alt="">
+        <button class="product-modal__nav product-modal__nav--next" type="button" id="modalNext" aria-label="Proxima imagem">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+        <div class="product-modal__dots" id="modalDots"></div>
+        <div class="product-modal__thumbs" id="modalThumbs" aria-label="Miniaturas do produto"></div>
+      </div>
+
+      <div class="product-modal__content">
+        <span id="productModalCategory">Produto MM Pescados</span>
+        <h3 id="productModalTitle"></h3>
+        <div class="product-modal__divider"><span></span><i class="fa-solid fa-fish"></i></div>
+        <p id="productModalDescription"></p>
+        <div class="product-modal__chips" aria-label="Diferenciais do produto">
+          <div><i class="fa-solid fa-fish"></i><span>Produto fresco selecionado</span></div>
+          <div><i class="fa-regular fa-snowflake"></i><span>Congelado na medida</span></div>
+          <div><i class="fa-solid fa-shield-halved"></i><span>Embalagem segura</span></div>
+        </div>
+        <div class="product-modal__info">
+          <div><i class="fa-solid fa-hand-point-right"></i><strong>Ideal para</strong><span id="productModalUse">Ensopados, moquecas, assados e caldeiradas.</span></div>
+          <div><i class="fa-regular fa-snowflake"></i><strong>Conservacao</strong><span>Manter congelado a -18°C ou mais frio.</span></div>
+          <div><i class="fa-solid fa-link"></i><strong>Informacao nutricional</strong><span>Fonte de proteinas, omega 3 e minerais essenciais.</span></div>
+        </div>
+        <a class="btn-primary product-modal__order" id="productModalOrder" href="https://wa.me/554830244024" target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i><span>Fazer pedido no WhatsApp</span><small>Atendimento rapido e personalizado</small>
+        </a>
+      </div>
+      <div class="product-modal__footer" aria-hidden="true">
+        <div><i class="fa-solid fa-fish"></i><span>Peixes e frutos do mar sempre frescos</span></div>
+        <div><i class="fa-solid fa-shield-halved"></i><span>Selecionados com qualidade premium</span></div>
+        <div><i class="fa-solid fa-pen"></i><span>Cortes feitos com perfeicao</span></div>
+        <div><i class="fa-solid fa-sliders"></i><span>Sabor que transforma suas receitas</span></div>
+      </div>
+    </div>
+  </div>
+
   <a class="whatsapp-float whatsapp-pulse" href="https://wa.me/554830244024?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20MM%20Pescados%20e%20quero%20fazer%20um%20pedido." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
     <i class="fa-brands fa-whatsapp"></i>
   </a>
@@ -422,7 +424,7 @@
   <footer class="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <img class="footer-logo" src="./assets/img/mm-logo-oficial.png" alt="MM Pescados" />
+        <img class="footer-logo" src="./assets/img/mm-logo-oficial.png" alt="MM Pescados" loading="lazy" decoding="async" />
         <strong>MM Pescados</strong>
         <p>Peixes frescos, filés premium, frutos do mar, congelados e empanados em Florianópolis.</p>
       </div>
@@ -447,6 +449,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
