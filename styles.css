@@ -8358,3 +8358,261 @@ body.maintenance-page .maintenance-visual::before{
     font-size:.96rem!important;
   }
 }
+
+/* FINAL OVERRIDE 12 - cards por pasta e botoes alinhados */
+.hero-actions,
+.contact-premium-actions{
+  display:flex!important;
+  align-items:center!important;
+  gap:14px!important;
+  flex-wrap:wrap!important;
+}
+
+.hero-actions .btn-primary,
+.hero-actions .btn-secondary,
+.contact-premium-actions .btn-primary,
+.contact-premium-actions .btn-secondary{
+  min-height:54px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  padding:0 22px!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+}
+
+.hero-actions .btn-primary i,
+.hero-actions .btn-secondary i,
+.contact-premium-actions .btn-primary i,
+.contact-premium-actions .btn-secondary i{
+  position:static!important;
+  width:18px!important;
+  height:18px!important;
+  min-width:18px!important;
+  display:inline-grid!important;
+  place-items:center!important;
+  margin:0!important;
+  line-height:1!important;
+  transform:none!important;
+}
+
+.hero-actions .btn-primary span,
+.hero-actions .btn-secondary span,
+.contact-premium-actions .btn-primary span,
+.contact-premium-actions .btn-secondary span{
+  position:static!important;
+  display:inline-block!important;
+  margin:0!important;
+  line-height:1!important;
+  transform:none!important;
+}
+
+.product-card__button{
+  position:relative!important;
+  border:0!important;
+  padding:0!important;
+  background:transparent!important;
+  color:inherit!important;
+  cursor:pointer!important;
+  text-align:left!important;
+  overflow:hidden!important;
+}
+
+.product-card .showcase-image::after{
+  background:linear-gradient(180deg,rgba(0,0,0,.04),rgba(0,7,16,.18) 38%,rgba(0,7,18,.95) 100%)!important;
+}
+
+.product-card .showcase-content{
+  inset:auto 0 0 0!important;
+  width:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:flex-start!important;
+  justify-content:flex-end!important;
+  min-height:46%!important;
+  padding:20px!important;
+  background:linear-gradient(180deg,rgba(0,9,18,0),rgba(0,9,18,.72) 30%,rgba(0,9,18,.96))!important;
+}
+
+.product-card .showcase-content span{
+  display:inline-flex!important;
+  max-width:100%!important;
+  margin:0 0 7px!important;
+  color:#57c5ff!important;
+  font-size:.72rem!important;
+  font-weight:900!important;
+  letter-spacing:.08em!important;
+  text-transform:uppercase!important;
+}
+
+.product-card .showcase-content h3{
+  max-width:100%!important;
+  margin:0 0 8px!important;
+  color:#fff!important;
+  font-size:1.22rem!important;
+  line-height:1.08!important;
+  letter-spacing:0!important;
+}
+
+.product-card .showcase-content p{
+  display:-webkit-box!important;
+  max-width:100%!important;
+  margin:0!important;
+  overflow:hidden!important;
+  color:rgba(231,247,255,.84)!important;
+  font-size:.86rem!important;
+  line-height:1.35!important;
+  -webkit-line-clamp:3!important;
+  -webkit-box-orient:vertical!important;
+  text-shadow:none!important;
+}
+
+.product-card .showcase-content small{
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  min-height:32px!important;
+  margin-top:14px!important;
+  padding:0 12px!important;
+  border:1px solid rgba(87,197,255,.55)!important;
+  border-radius:999px!important;
+  color:#fff!important;
+  background:rgba(11,126,218,.32)!important;
+  font-size:.76rem!important;
+  font-weight:900!important;
+  line-height:1!important;
+}
+
+@media (max-width:1280px){
+  .product-card .showcase-content{
+    padding:18px!important;
+  }
+
+  .product-card .showcase-content h3{
+    font-size:1.1rem!important;
+  }
+
+  .product-card .showcase-content p{
+    font-size:.8rem!important;
+    -webkit-line-clamp:2!important;
+  }
+}
+
+@media (max-width:720px){
+  .hero-actions,
+  .contact-premium-actions{
+    align-items:stretch!important;
+  }
+
+  .hero-actions .btn-primary,
+  .hero-actions .btn-secondary,
+  .contact-premium-actions .btn-primary,
+  .contact-premium-actions .btn-secondary{
+    width:100%!important;
+    min-width:0!important;
+    white-space:normal!important;
+  }
+
+  .product-card .showcase-content{
+    min-height:50%!important;
+    padding:18px!important;
+  }
+
+  .product-card .showcase-content h3{
+    font-size:1.26rem!important;
+  }
+
+  .product-card .showcase-content p{
+    font-size:.88rem!important;
+    -webkit-line-clamp:3!important;
+  }
+}
+
+/* FINAL OVERRIDE 13 - botao WhatsApp do footer alinhado */
+.footer__bottom a,
+.footer__bottom a:link,
+.footer__bottom a:visited{
+  position:relative!important;
+  left:auto!important;
+  right:auto!important;
+  bottom:auto!important;
+  width:fit-content!important;
+  min-width:0!important;
+  min-height:54px!important;
+  display:inline-flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:10px!important;
+  margin:0!important;
+  padding:0 28px!important;
+  border:0!important;
+  border-radius:999px!important;
+  color:#fff!important;
+  background:rgba(37,211,102,.16)!important;
+  text-align:center!important;
+  line-height:1!important;
+  white-space:nowrap!important;
+  transform:none!important;
+}
+
+.footer__bottom a::before,
+.footer__bottom a::after{
+  content:none!important;
+  display:none!important;
+}
+
+.footer__bottom a i,
+.footer__bottom a svg{
+  position:static!important;
+  left:auto!important;
+  right:auto!important;
+  top:auto!important;
+  bottom:auto!important;
+  width:18px!important;
+  height:18px!important;
+  min-width:18px!important;
+  display:inline-grid!important;
+  place-items:center!important;
+  margin:0!important;
+  padding:0!important;
+  color:#25d366!important;
+  font-size:1.08rem!important;
+  line-height:1!important;
+  transform:none!important;
+}
+
+@media (max-width:680px){
+  .footer__bottom{
+    align-items:center!important;
+    text-align:center!important;
+  }
+
+  .footer__bottom a,
+  .footer__bottom a:link,
+  .footer__bottom a:visited{
+    width:100%!important;
+    white-space:normal!important;
+  }
+}
+
+/* FINAL OVERRIDE 14 - hero com imagem estatica */
+.hero-section .hero-media,
+.hero-media{
+  width:min(420px,100%)!important;
+  max-width:420px!important;
+  height:auto!important;
+  min-height:0!important;
+  aspect-ratio:1013/1280!important;
+  justify-self:center!important;
+  background:#d9e0dc!important;
+}
+
+.hero-media img#heroImage{
+  width:100%!important;
+  height:100%!important;
+  display:block!important;
+  object-fit:contain!important;
+  object-position:center!important;
+  border-radius:inherit!important;
+}
