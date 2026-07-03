@@ -112,7 +112,7 @@ const MM_PRODUCTS = [
     name: "Atum",
     category: "Linha premium",
     description: "Atum de alto padrao para cortes nobres, pratos frios, grelhados e receitas especiais.",
-    images: ["assets/FOTOS/Atum/ATUM 6.jpeg", "assets/FOTOS/Atum/ATUM 5.jpeg", "assets/FOTOS/Atum/ATUM 4.jpeg", "assets/FOTOS/Atum/ATUM 3.jpeg", "assets/FOTOS/Atum/ATUM 2.jpeg", "assets/FOTOS/Atum/ATUM 1.jpeg"],
+    images: ["assets/FOTOS/Atum/ATUM 6.jpeg", "assets/FOTOS/Atum/ATUM 5.jpeg", "assets/FOTOS/Atum/ATUM 4.jpeg", "assets/FOTOS/Atum/atum 3.jpeg", "assets/FOTOS/Atum/ATUM 2.jpeg", "assets/FOTOS/Atum/ATUM 1.jpeg"],
   },
   {
     folder: "Bacalhau",
@@ -147,7 +147,7 @@ const MM_PRODUCTS = [
     name: "Dourado",
     category: "Peixe fresco",
     description: "Dourado fresco, de sabor suave e carne firme, perfeito para assar, grelhar ou preparar em postas.",
-    images: ["assets/FOTOS/Dourado/DOURADOS.jpeg", "assets/FOTOS/Dourado/DOURADOS 2.jpeg", "assets/FOTOS/Dourado/DOURADOS 1.jpeg"],
+    images: ["assets/FOTOS/Dourado/DOURADOS.jpeg", "assets/FOTOS/Dourado/dourados 2.jpeg", "assets/FOTOS/Dourado/dourados 1.jpeg"],
   },
   {
     folder: "EMPANADOS",
@@ -231,7 +231,7 @@ const MM_PRODUCTS = [
     name: "Pescada Amarela",
     category: "Peixe fresco",
     description: "Pescada amarela fresca para postas, moquecas, ensopados e preparos do dia a dia.",
-    images: ["assets/FOTOS/Pescada Amarela/PESCADAAMARELA1.jpeg", "assets/FOTOS/Pescada Amarela/PESCADA AMARELA 2.jpeg"],
+    images: ["assets/FOTOS/Pescada Amarela/PESCADAAMARELA1.jpeg", "assets/FOTOS/Pescada Amarela/pescada amarela 2.jpeg"],
   },
   {
     folder: "Pescada Branca",
@@ -259,7 +259,7 @@ const MM_PRODUCTS = [
     name: "Robalo",
     category: "Peixe fresco",
     description: "Robalo fresco, peixe de carne branca e sabor delicado para preparos nobres.",
-    images: ["assets/FOTOS/Robalo/ROBALO3.jpeg", "assets/FOTOS/Robalo/ROBALO1.jpeg", "assets/FOTOS/Robalo/ROBALO 2.jpeg"],
+    images: ["assets/FOTOS/Robalo/ROBALO3.jpeg", "assets/FOTOS/Robalo/ROBALO1.jpeg", "assets/FOTOS/Robalo/robalo 2.jpeg"],
   },
   {
     folder: "Salmao",
