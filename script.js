@@ -1,5 +1,5 @@
 const MM_WHATSAPP_PHONE = "554830244024";
-const MM_WHATSAPP_TEXT = "Olá, vim pelo site da MM Pescados e quero fazer um pedido.";
+const MM_WHATSAPP_TEXT = "Vim do site da MM Pescados e gostaria de ter mais informações";
 const MM_WHATSAPP_URL = `https://wa.me/${MM_WHATSAPP_PHONE}?text=${encodeURIComponent(MM_WHATSAPP_TEXT)}`;
 
 const loader = document.getElementById("loader");
@@ -7,7 +7,7 @@ const header = document.getElementById("header");
 const nav = document.getElementById("nav");
 const navToggle = document.getElementById("navToggle");
 function setupWhatsAppLinks() {
-  document.querySelectorAll('a[href*="wa.me"], .whatsapp-float').forEach((link) => {
+  document.querySelectorAll('a[href*="wa.me"]:not(#productModalOrder), .whatsapp-float').forEach((link) => {
     link.setAttribute("href", MM_WHATSAPP_URL);
     link.setAttribute("target", "_blank");
     link.setAttribute("rel", "noopener");
